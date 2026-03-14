@@ -6,6 +6,8 @@ double Vabs(double);
 double May(double, double);
 double Men(double, double);
 double Pot(double, double);
+double Rzn(double, int);
+
 
 double Sum(double var1, double var2) {
 	return var1 + var2;
@@ -46,6 +48,17 @@ double Pot(double var1, double var2) {
 	for (int i = 1; i <= var2; i++)
 	{
 		rta *= var1;
+	}
+	return rta;
+}
+
+double Rzn(double var, int n) {
+	double rta = 0;
+	double paso = 0.0001;
+
+	for (double i = 0; Pot(i, n) <= var; i += paso)
+	{
+		rta = i;
 	}
 	return rta;
 }
