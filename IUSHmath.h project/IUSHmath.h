@@ -7,6 +7,8 @@ double May(double, double);
 double Men(double, double);
 double Pot(double, double);
 double Rzn(double, int);
+double Cub(double);
+bool Primo(int);
 
 
 double Sum(double var1, double var2) {
@@ -61,4 +63,16 @@ double Rzn(double var, int n) {
 		rta = i;
 	}
 	return rta;
+}
+
+double Cub(double var) {
+	return Pot(var, 3);
+}
+
+bool Primo(int var){
+
+	if (var / 2 != 1 || var / 3 != 1)
+		return true;
+
+	return false;
 }

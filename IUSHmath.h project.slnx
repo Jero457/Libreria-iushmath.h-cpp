@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="IUSHmath.h project/IUSHmath.h project.vcxproj" />
+  <Project Path="IUSHmath.h project/IUSHmath.h project.vcxproj" Id="16b3d038-17bd-490a-a9a2-1274f9baa564" />
 </Solution>
