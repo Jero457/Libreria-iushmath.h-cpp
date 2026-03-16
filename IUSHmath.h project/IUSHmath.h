@@ -12,6 +12,7 @@ double Cub(double);
 bool Primo(int);
 int Sumatoria(int, int);
 unsigned long long factorial(int);
+void Fibonacci(int);
 
 
 //1
