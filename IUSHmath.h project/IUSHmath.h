@@ -91,6 +91,17 @@ double Cub(double var) {
 	return Pot(var, 3);
 }
 
+//14
+double Potn(double var1, int n) {
+    double resultado = 1;
+
+    for(int i = 0; i < n; i++) {
+        resultado *= var1;
+    }
+
+    return resultado;
+}
+
 //16
 
 int Sumatoria(int var1, int var2) {
