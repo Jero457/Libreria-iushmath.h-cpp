@@ -1,4 +1,3 @@
-
 double Sum(double, double);
 double Dif(double, double);
 double Pro(double, double);
@@ -12,7 +11,7 @@ double Cub(double);
 bool Primo(int);
 int Sumatoria(int, int);
 unsigned long long factorial(int);
-void Fibonacci(int);
+unsigned long long Fibonacci(int);
 
 
 //1
@@ -141,23 +140,23 @@ bool Primo(int var){
 	return false;
 }
 
-<<<<<<< HEAD
 //Fibonacci
 
-void Fibonacci(int var1) {
-	unsigned long long num1 = 0, num2 = 1, fibo;
-	if (var1 <= 0) {
-		cout << "Error: ingresa un numero positivo" << endl;
-		return;
+unsigned long long Fibonacci(int n) {
+	if (n <= 0) {
+		return 0; 
 	}
-	for (int i = 1; i <= var1; i++) {
-		cout << num1 << "  ";
-		fibo = num1 + num2;
-		num1 = num2;
-		num2 = fibo;
+
+	unsigned long long a = 0, b = 1;
+	for (int i = 1; i < n; i++) {
+		unsigned long long temp = a + b;
+		a = b;
+		b = temp;
 	}
+	return a;
 }
-=======
+
+
 //Serie Lucas
 int Lucas(int var) {
     int n;
@@ -178,4 +177,4 @@ int Lucas(int var) {
 
     return n;
 }
->>>>>>> feature-14
+
