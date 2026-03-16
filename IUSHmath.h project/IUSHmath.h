@@ -11,6 +11,7 @@ double Rzn(double, int);
 double Cub(double);
 bool Primo(int);
 int Sumatoria(int, int);
+unsigned long long factorial(int);
 
 
 //1
@@ -103,6 +104,17 @@ int Sumatoria(int var1, int var2) {
 	for (int i = var1; i <= var2; i++)
 	{
 		sum += i;
+	}
+	return sum;
+}
+
+//17
+
+unsigned long long factorial(int var1) {
+	unsigned long long sum = 1;
+	for (int i = 1; i <= var1; i++)
+	{
+		sum *= i;
 	}
 	return sum;
 }
