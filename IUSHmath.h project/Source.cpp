@@ -16,5 +16,10 @@ int main() {
 	cout << "Mayor entre " << n1 << " y " << n2 << ": " << May(n1, n2) << endl;
 	cout << "Menor entre " << n3 << " y " << n4 << ": " << Men(n3, n4) << endl;
 	cout << n3 << " elevado a " << n4 << ": " << Pot(n3, n4) << endl;
+	cout << "Raiz 5 de " << n4 << ": " << Rzn(32, n4) << endl;
+	if(Primo(11))
+		cout << "7 es primo" << endl;
+	else
+		cout << "7 no es primo" << endl;
 	return 0;
 }
