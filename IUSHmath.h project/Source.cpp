@@ -22,4 +22,7 @@ int main() {
 	else
 		cout << "7 no es primo" << endl;
 	return 0;
+	//Lucas
+	 cout << "El termino " << n3 << " de la serie de Lucas es: " << Lucas(n3) << endl;
+
 }
