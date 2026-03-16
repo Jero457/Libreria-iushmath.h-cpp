@@ -11,21 +11,31 @@ double Cub(double);
 bool Primo(int);
 
 
+//1
+
 double Sum(double var1, double var2) {
 	return var1 + var2;
 }
+
+//2
 
 double Dif(double var1, double var2) {
 	return var1 - var2;
 }
 
+//3
+
 double Pro(double var1, double var2) {
 	return var1 * var2;
 }
 
+//4
+
 double Coc(double var1, double var2) {
 	return var1 / var2;
 }
+
+//5
 
 double Vabs(double var) {
 	if (var < 0)
@@ -33,17 +43,23 @@ double Vabs(double var) {
 	return var;
 }
 
+//6
+
 double May(double var1, double var2) {
 	if (var1 > var2)
 		return var1;
 	return var2;
 }
 
+//7
+
 double Men(double var1, double var2) {
 	if (var1 < var2)
 		return var1;
 	return var2;
 }
+
+//8
 
 double Pot(double var1, double var2) {
 	double rta = 1;
@@ -54,6 +70,8 @@ double Pot(double var1, double var2) {
 	return rta;
 }
 
+
+// 11
 double Rzn(double var, int n) {
 	double rta = 0;
 	double paso = 0.0001;
@@ -65,9 +83,13 @@ double Rzn(double var, int n) {
 	return rta;
 }
 
+//13
+
 double Cub(double var) {
 	return Pot(var, 3);
 }
+
+//18
 
 bool Primo(int var){
 
