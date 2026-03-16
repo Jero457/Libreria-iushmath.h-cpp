@@ -128,3 +128,19 @@ bool Primo(int var){
 
 	return false;
 }
+
+//Fibonacci
+
+void Fibonacci(int var1) {
+	unsigned long long num1 = 0, num2 = 1, fibo;
+	if (var1 <= 0) {
+		cout << "Error: ingresa un numero positivo" << endl;
+		return;
+	}
+	for (int i = 1; i <= var1; i++) {
+		cout << num1 << "  ";
+		fibo = num1 + num2;
+		num1 = num2;
+		num2 = fibo;
+	}
+}
