@@ -93,6 +93,17 @@ double Cub(double var) {
 	return Pot(var, 3);
 }
 
+//14
+double Potn(double var1, int n) {
+    double resultado = 1;
+
+    for(int i = 0; i < n; i++) {
+        resultado *= var1;
+    }
+
+    return resultado;
+}
+
 //16
 
 int Sumatoria(int var1, int var2) {
@@ -130,6 +141,7 @@ bool Primo(int var){
 	return false;
 }
 
+<<<<<<< HEAD
 //Fibonacci
 
 void Fibonacci(int var1) {
@@ -145,3 +157,25 @@ void Fibonacci(int var1) {
 		num2 = fibo;
 	}
 }
+=======
+//Serie Lucas
+int Lucas(int var) {
+    int n;
+
+    if (var == 0)
+        n = 2;
+    else if (var == 1)
+        n = 1;
+    else {
+        int a = 2, b = 1;
+
+        for (int i = 2; i <= var; i++) {
+            n = a + b;
+            a = b;
+            b = n;
+        }
+    }
+
+    return n;
+}
+>>>>>>> feature-14
