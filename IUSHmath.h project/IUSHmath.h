@@ -1,3 +1,4 @@
+
 double Sum(double, double);
 double Dif(double, double);
 double Pro(double, double);
@@ -9,6 +10,7 @@ double Pot(double, double);
 double Rzn(double, int);
 double Cub(double);
 bool Primo(int);
+int Sumatoria(int, int);
 
 
 //1
@@ -87,6 +89,22 @@ double Rzn(double var, int n) {
 
 double Cub(double var) {
 	return Pot(var, 3);
+}
+
+//16
+
+int Sumatoria(int var1, int var2) {
+	int sum = 0;
+	if (var1 > var2) {
+		int aux = var1;
+		var1 = var2;
+		var2 = aux;
+	}
+	for (int i = var1; i <= var2; i++)
+	{
+		sum += i;
+	}
+	return sum;
 }
 
 //18
