@@ -24,12 +24,16 @@ int main() {
 
 	//9
 	cout << "La raiz cuadrada de " << n3 << " es: " << Rzcd(n3) << endl;
+	//10
+	cout << "Raiz cubica de 27: " << Rzcb(27) << endl;
 	//Fibonacci
 	cout << "El termino " << n3 << " de la serie de Fibonacci es: " << Fibonacci(n3) << endl;
 	//Lucas
 	 cout << "El termino " << n3 << " de la serie de Lucas es: " << Lucas(2) << endl;
 	 //Triangular
 	 cout << "El numero triangular de " << n3 << " es: " << Triangular(n3) << endl;
+	 //MCM
+	 cout << "MCM entre 12 y 18: " << Mcm(12, 18) << endl;
 
 	 return 0;
 	 
