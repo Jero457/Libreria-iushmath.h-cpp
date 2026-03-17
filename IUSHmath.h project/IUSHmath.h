@@ -20,6 +20,9 @@ int Mcd(int, int);
 double Potn(double, int);
 double Triangular(int);
 double Cua(double);
+bool Div(int, int);
+bool Amigo(int, int);
+bool Perfecto(int);
 
 
 
@@ -145,6 +148,14 @@ double Potn(double var1, int n) {
     return resultado;
 }
 
+//15
+
+bool Div(int var1, int var2) {
+	if (var1 % var2 == 0)
+		return true;
+	return false;
+}
+
 //16
 
 int Sumatoria(int var1, int var2) {
@@ -180,6 +191,46 @@ bool Primo(int var){
 		return false;
 
 	return true;
+}
+
+//19
+
+bool Amigo(int var1, int var2) {
+	int suma1 = 0, suma2 = 0;
+
+	for (int i = 1; i < var1; i++)
+	{
+		if (var1 % i == 0)
+			suma1 += i;
+	}
+
+	for (int i = 1; i < var2; i++)
+	{
+		if (var2 % i == 0)
+			suma2 += i;
+	}
+
+	if (suma1 == var2 && suma2 == var1)
+		return true;
+	return false;
+}
+
+//20
+
+bool Perfecto(int var) {
+
+	int suma = 0;
+
+	for (int i = 1; i < var; i++) {
+		if (var % i == 0) {
+			suma += i;
+		}
+	}
+
+	if (suma == var)
+		return true;
+	else
+		return false;
 }
 
 //Fibonacci
