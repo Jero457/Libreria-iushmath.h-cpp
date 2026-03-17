@@ -10,8 +10,10 @@ double Rzn(double, int);
 double Cub(double);
 bool Primo(int);
 int Sumatoria(int, int);
+int Lucas(int);
 unsigned long long factorial(int);
 unsigned long long Fibonacci(int);
+double Rzcd(double);
 
 
 //1
@@ -71,6 +73,19 @@ double Pot(double var1, double var2) {
 		rta *= var1;
 	}
 	return rta;
+}
+
+//9
+
+double Rzcd(double var) {
+	if (var < 0) return -1; // manejo de error para negativos
+	if (var == 0) return 0;
+
+	double x = var; // valor inicial
+	for (int i = 0; i < 20; i++) { // 20 iteraciones bastan
+		x = 0.5 * (x + var / x);
+	}
+	return x;
 }
 
 
@@ -176,5 +191,12 @@ int Lucas(int var) {
     }
 
     return n;
+}
+
+//Numero Triangular
+
+double Triangular(int n) {
+	if (n <= 0) return 0; 
+	return (n * (n + 1)) / 2.0;
 }
 
