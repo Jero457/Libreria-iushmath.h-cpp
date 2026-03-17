@@ -17,6 +17,9 @@ double Rzcd(double);
 double Rzcb(double);
 int Mcm(int, int);
 int Mcd(int, int);
+double Potn(double, int);
+double Triangular(int);
+double Cua(double);
 
 
 
@@ -118,6 +121,13 @@ double Rzn(double var, int n) {
 	return rta;
 }
 
+//12
+
+double Cua(double var) {
+	return Pot(var, 2);
+}
+
+
 //13
 
 double Cub(double var) {
@@ -167,9 +177,9 @@ unsigned long long factorial(int var1) {
 bool Primo(int var){
 
 	if (var / 2 != 1 || var / 3 != 1)
-		return true;
+		return false;
 
-	return false;
+	return true;
 }
 
 //Fibonacci

@@ -26,6 +26,18 @@ int main() {
 	cout << "La raiz cuadrada de " << n3 << " es: " << Rzcd(n3) << endl;
 	//10
 	cout << "Raiz cubica de 27: " << Rzcb(27) << endl;
+	//12
+	cout << "El cuadrado de " << n3 << " es: " << Cua(n3) << endl;
+	//13
+	cout << "El cubo de " << n3 << " es: " << Cub(n3) << endl;
+	//14
+	cout << "2 elevado a 5: " << Potn(2, 5) << endl;
+	//16
+	cout << "La sumatoria entre " << n4 << " y " << n3 << " es: " << Sumatoria(n4, n3) << endl;
+	//17
+	cout << "El factorial de " << n4 << " es: " << factorial(n4) << endl;
+	//18
+	cout << n3 << " es primo? " << (Primo(n3) ? "Si" : "No") << endl;
 	//Fibonacci
 	cout << "El termino " << n3 << " de la serie de Fibonacci es: " << Fibonacci(n3) << endl;
 	//Lucas
