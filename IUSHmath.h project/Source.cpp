@@ -21,10 +21,15 @@ int main() {
 		cout << "7 es primo" << endl;
 	else
 		cout << "7 no es primo" << endl;
+
+	//9
+	cout << "La raiz cuadrada de " << n3 << " es: " << Rzcd(n3) << endl;
 	//Fibonacci
 	cout << "El termino " << n3 << " de la serie de Fibonacci es: " << Fibonacci(n3) << endl;
 	//Lucas
 	 cout << "El termino " << n3 << " de la serie de Lucas es: " << Lucas(2) << endl;
+	 //Triangular
+	 cout << "El numero triangular de " << n3 << " es: " << Triangular(n3) << endl;
 
 	 return 0;
 	 
