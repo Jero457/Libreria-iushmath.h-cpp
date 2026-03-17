@@ -34,6 +34,8 @@ int main() {
 	 cout << "El numero triangular de " << n3 << " es: " << Triangular(n3) << endl;
 	 //MCM
 	 cout << "MCM entre 12 y 18: " << Mcm(12, 18) << endl;
+	 //MCD
+	 cout << "El Maximo Comun Divisor entre "<< n3 << " y " << n4<< " es: " << Mcd(n3, n4) << endl;
 
 	 return 0;
 	 

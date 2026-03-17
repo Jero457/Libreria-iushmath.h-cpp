@@ -16,6 +16,8 @@ unsigned long long Fibonacci(int);
 double Rzcd(double);
 double Rzcb(double);
 int Mcm(int, int);
+int Mcd(int, int);
+
 
 
 //1
@@ -229,4 +231,17 @@ int Mcm(int var1, int var2) {
 			return i;
 	}
 }
+
+//Minimo comun divisor
+
+int Mcd(int var1, int var2) {
+	int r;
+	while (var2 != 0) {
+		r = var1 % var2;
+		var1 = var2;
+		var2 = r;
+	}
+	return var1;
+}
+
 
