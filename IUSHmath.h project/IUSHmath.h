@@ -14,6 +14,8 @@ int Lucas(int);
 unsigned long long factorial(int);
 unsigned long long Fibonacci(int);
 double Rzcd(double);
+double Rzcb(double);
+int Mcm(int, int);
 
 
 //1
@@ -86,6 +88,19 @@ double Rzcd(double var) {
 		x = 0.5 * (x + var / x);
 	}
 	return x;
+}
+
+//10
+
+double Rzcb(double var) {
+	double rta = 0;
+	double paso = 0.0001;
+
+	for (double i = 0; Pot(i, 3) <= var; i += paso)
+	{
+		rta = i;
+	}
+	return rta;
 }
 
 
@@ -198,5 +213,20 @@ int Lucas(int var) {
 double Triangular(int n) {
 	if (n <= 0) return 0; 
 	return (n * (n + 1)) / 2.0;
+}
+
+//Minimo comun multiplo
+
+int Mcm(int var1, int var2) {
+	int mayor = var1;
+
+	if (var2 > var1)
+		mayor = var2;
+
+	for (int i = mayor; ; i++)
+	{
+		if (i % var1 == 0 && i % var2 == 0)
+			return i;
+	}
 }
 
